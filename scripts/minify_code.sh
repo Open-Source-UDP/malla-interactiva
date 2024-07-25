@@ -18,7 +18,7 @@ find css/ -type f \
     -exec mv -f {}.min {} \;
 
 # compress js files even more with gzip
-gzip js/*
+# gzip js/*
 
 # Create file representing last update date
 date +"%s000" | tee date.txt
