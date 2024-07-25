@@ -110,9 +110,11 @@ Promise.all(promises)
   })
   .then((response) => {
     console.log(response);
-    let lastModified = response.headers.get("last-modified");
-    let date = new Date(lastModified);
-    console.log(date);
+    return response.text();
+  })
+  .then((lastModified) => {
+    let date = new Date(+lastModified);
+    console.log("date", date);
     document.getElementById("lastUpdate").textContent = date.toLocaleString();
   });
 Promise.all(promises)
