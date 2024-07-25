@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es-cl">
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EY2REP8T30"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-EY2REP8T30');
-</script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EY2REP8T30"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EY2REP8T30');
+  </script>
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M5LWCHD');</script>
-    <!-- End Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M5LWCHD');</script>
+  <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +40,7 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/darkMode.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="./css/styles.css">
@@ -59,15 +63,16 @@
   <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 
-<!--  Preload-->
+  <!--  Preload-->
   <link rel="preload" href="js/min1.js" as="script">
   <link rel="preload" href="./views/header.html" as="document">
   <link rel="preload" href="./views/footer.html" as="document">
-<!--  <link rel="preload" href="./data/carreras.json" as="fetch">-->
+  <!--  <link rel="preload" href="./data/carreras.json" as="fetch">-->
   <link rel="preconnect" href="https://kit.fontawesome.com/">
 
 
 </head>
+
 <body class="d-flex flex-column">
 
 
@@ -77,10 +82,11 @@
         <div class="row justify-content-center  align-items-center">
           <div class="col col-md-8 col-xl-6 text-center">
             <h1>¡Bienvenido!</h1>
-            <svg  class="py-3 py-md-5" style="min-height: 100px" >
+            <svg class="py-3 py-md-5" style="min-height: 100px">
               <use href="#subjectExample"></use>
             </svg>
-            <h5 style="max-width: 500px" class="mx-auto">Si alcanzas a leer este texto, seguramente la malla aún esta cargando u ocurrió un problema y tienes que refrescar la página...</h5>
+            <h5 style="max-width: 500px" class="mx-auto">Si alcanzas a leer este texto, seguramente la malla aún esta
+              cargando u ocurrió un problema y tienes que refrescar la página...</h5>
           </div>
         </div>
       </div>
@@ -91,74 +97,129 @@
 
 
 
-<div id="content" class="blur d-flex flex-column flex-grow-1">
-  <!-- Header -->
-  <header data-include="header"></header>
-      
+  <div id="content" class="blur d-flex flex-column flex-grow-1">
+    <!-- Header -->
+    <header data-include="header"></header>
 
 
-  <!-- Main -->
-  <section class="container-fluid">
-    <div class="row justify-content-center no-gutters">
-      <div class="col">
-        <div class='canvas pt-3 text-center' style="overflow-x:auto"></div>
+
+    <!-- Main -->
+    <section class="container-fluid">
+      <div class="row justify-content-center no-gutters">
+        <div class="col">
+          <div class='canvas pt-3 text-center' style="overflow-x:auto"></div>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="container-xl flex-grow-1">
-    <div class="row">
-      <div class='col color-description' style="position:relative;display:flex;justify-content:center;flex-wrap:wrap;"></div>
-    </div>
-    <div class="info row">
-      <div class="col text-center center-block">
-        <h5>Mostrando créditos <span id="credits-system"></span><br>Créditos aprobados: <span id='credits'></span>
-          (<span id="credPercentage"></span>%), Total ramos: <span id="ramoPercentage"></span>%</h5>
-        <button type="button" id="cleanApprovedButton" class="mt-2 btn btn-secondary">Limpiar ramos aprobados</button>
-        <button id="credit-system" type="button" onclick="changeCreditsSystem()" class="mt-2 btn btn-info"> Cambiar sistema de créditos </button>
+    </section>
+    <section class="container-xl flex-grow-1">
+      <div class="row">
+        <div class='col color-description'
+          style="position:relative;display:flex;justify-content:center;flex-wrap:wrap;"></div>
       </div>
-      <div class="col-12 order-xl-5 my-3 text-center">
-        <button type="button" class="btn btn-primary" id="loadfile" >Cargar Malla compartida</button>
+      <div class="info row">
+        <div class="col text-center center-block">
+          <h5>
+            <!-- Mostrando créditos <span id="credits-system"></span><br> -->
+            Créditos aprobados: <span id='credits'></span>
+            (<span id="credPercentage"></span>%), Total ramos: <span id="ramoPercentage"></span>%
+          </h5>
+          <button type="button" id="cleanApprovedButton" class="mt-2 btn btn-secondary">Limpiar ramos aprobados</button>
+          <!-- <button id="credit-system" type="button" onclick="changeCreditsSystem()" class="mt-2 btn btn-info"> Cambiar sistema de créditos </button> -->
+        </div>
+        <div class="col-12 order-xl-5 my-3 text-center">
+          <!-- <button type="button" class="btn btn-primary" id="loadfile" >Cargar Malla compartida</button> -->
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- Main END  -->
-  
-  
-  <!-- Footer -->
-  <footer data-include="footer"  class="container-fluid text-center mt-3">
-  </footer>
-</div>
+    </section>
+    <!-- Main END  -->
+
+
+    <!-- Footer -->
+    <footer data-include="footer" class="container-fluid text-center mt-3">
+    </footer>
+  </div>
   <!-- Footer END -->
 
   <!-- svg ramo -->
   <div class="d-none">
-    <svg id="subjectExample" xmlns="http://www.w3.org/2000/svg" width="300" height="100"   font-family="  -apple-system,   BlinkMacSystemFont,   &quot;Segoe UI&quot;,   &quot;Roboto&quot;,   &quot;Helvetica Neue&quot;, Arial, sans-serif,   &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;">
+    <svg id="subjectExample" xmlns="http://www.w3.org/2000/svg" width="300" height="100"
+      font-family="  -apple-system,   BlinkMacSystemFont,   &quot;Segoe UI&quot;,   &quot;Roboto&quot;,   &quot;Helvetica Neue&quot;, Arial, sans-serif,   &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;">
       <style type="text/css">
         .bars {
           fill: grey;
         }
+
         .text {
           fill: black;
         }
+
         .line {
           stroke: black;
         }
+
         @media(prefers-color-scheme: dark) {
           .bars {
             fill: #404040;
           }
+
           .text {
             fill: white;
           }
+
           .line {
             stroke: white;
           }
         }
-      </style><style><![CDATA[.D{dominant-baseline:middle}.E{font-size:12px}.F{text-anchor:middle}]]></style><path fill="#2e58a7" d="M100 0h100v100H100z"/><path d="M100 0h100v20H100zm0 80h100v20H100z" class="bars" fill="gray"/><circle cx="190" cy="10" r="8" fill="#fff" fill-rule="evenodd"/><circle cy="90" cx="115" r="9" fill="#00838f" stroke="#fff"/><path d="M178 80h20v20h-20z" fill="#fff"/><text xml:space="preserve" x="190" y="10" writing-mode="lr-tb" direction="ltr" class="D E F"><tspan x="190" y="10" class="D">1</tspan></text><text xml:space="preserve" x="188" y="90" class="D E F"><tspan id="creditsNumberExample" x="187.639" y="90" class="D">1</tspan></text><text xml:space="preserve" x="115" y="90" fill="#fff" class="D E F"><tspan x="114.979" y="90.391" class="D">0</tspan></text><text xml:space="preserve" x="105" y="10" font-weight="bold" letter-spacing="0" fill="#fff" class="D E"><tspan x="105" y="10" class="D">INF-101</tspan></text><text xml:space="preserve" x="150" y="40" fill="#fff" class="E F"><tspan x="150" y="40" class="D">Introducción</tspan><tspan x="150" y="53.2" class="D">a la Malla</tspan><tspan x="150" y="66.4" class="D">Interactiva</tspan></text><text xml:space="preserve" x="92.465" y="11.742" text-anchor="end" class="E text"><tspan x="92.465" y="11.742">Sigla</tspan><tspan x="92.465" y="26.742">Asignatura</tspan></text><text xml:space="preserve" x="209.197" y="16.86" class="E text"><tspan x="209.197" y="16.86">Número</tspan><tspan x="209.197" y="31.86">asignatura</tspan></text><text xml:space="preserve" x="209.326" y="89.117" class="E text"><tspan id="creditsExample" x="209.326" y="89.117">Créditos USM</tspan></text><text xml:space="preserve" x="47.622" y="93.323" class="E F text"><tspan x="47.622" y="93.323">Prerrequisitos</tspan></text><path d="M94 9.4h9m91 2.6h14m-17 75h17m-100 3H92" class="line" stroke="#000"/></svg>
+      </style>
+      <style>
+        <![CDATA[
+        .D {
+          dominant-baseline: middle
+        }
+
+        .E {
+          font-size: 12px
+        }
+
+        .F {
+          text-anchor: middle
+        }
+        ]]>
+      </style>
+      <path fill="#2e58a7" d="M100 0h100v100H100z" />
+      <path d="M100 0h100v20H100zm0 80h100v20H100z" class="bars" fill="gray" />
+      <circle cx="190" cy="10" r="8" fill="#fff" fill-rule="evenodd" />
+      <circle cy="90" cx="115" r="9" fill="#00838f" stroke="#fff" />
+      <path d="M178 80h20v20h-20z" fill="#fff" /><text xml:space="preserve" x="190" y="10" writing-mode="lr-tb"
+        direction="ltr" class="D E F">
+        <tspan x="190" y="10" class="D">1</tspan>
+      </text><text xml:space="preserve" x="188" y="90" class="D E F">
+        <tspan id="creditsNumberExample" x="187.639" y="90" class="D">1</tspan>
+      </text><text xml:space="preserve" x="115" y="90" fill="#fff" class="D E F">
+        <tspan x="114.979" y="90.391" class="D">0</tspan>
+      </text><text xml:space="preserve" x="105" y="10" font-weight="bold" letter-spacing="0" fill="#fff" class="D E">
+        <tspan x="105" y="10" class="D">INF-101</tspan>
+      </text><text xml:space="preserve" x="150" y="40" fill="#fff" class="E F">
+        <tspan x="150" y="40" class="D">Introducción</tspan>
+        <tspan x="150" y="53.2" class="D">a la Malla</tspan>
+        <tspan x="150" y="66.4" class="D">Interactiva</tspan>
+      </text><text xml:space="preserve" x="92.465" y="11.742" text-anchor="end" class="E text">
+        <tspan x="92.465" y="11.742">Sigla</tspan>
+        <tspan x="92.465" y="26.742">Asignatura</tspan>
+      </text><text xml:space="preserve" x="209.197" y="16.86" class="E text">
+        <tspan x="209.197" y="16.86">Número</tspan>
+        <tspan x="209.197" y="31.86">asignatura</tspan>
+      </text><text xml:space="preserve" x="209.326" y="89.117" class="E text">
+        <tspan id="creditsExample" x="209.326" y="89.117">Créditos USM</tspan>
+      </text><text xml:space="preserve" x="47.622" y="93.323" class="E F text">
+        <tspan x="47.622" y="93.323">Prerrequisitos</tspan>
+      </text>
+      <path d="M94 9.4h9m91 2.6h14m-17 75h17m-100 3H92" class="line" stroke="#000" />
+    </svg>
   </div>
   <!-- fin svg ramo -->
 
-    <!-- scripts -->
+  <!-- scripts -->
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script defer src='js/min1.js'></script>
@@ -170,4 +231,5 @@
     <a class="dropdown-item" href="?m=${Link}">Malla ${Nombre}</a>
   </script>
 </body>
+
 </html>
