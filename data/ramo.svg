@@ -1,1 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 949.4 434.9"><style><![CDATA[.G{letter-spacing:-1}.P{fill:#6d6e70}.Q{font-family:OpenSans-Italic}.R{font-size:45.668px}.S{fill:#fff}.T{stroke-miterlimit:10}.U{font-family:OpenSans-Bold}.V{font-size:35.87px}.W{stroke:#6d6e70}.X{fill:#00828e}.Y{font-family:OpenSans-Regular}]]></style><path d="M336.8 39.6h291.7v281.9H336.8z" class="X"/><path d="M335.4 42.6h293.1v75.9H335.4zm1.4 222.7h293.1v56.2H336.8z" class="P"/><path d="M603.1 80.6c0 11.4-9.3 20.7-20.7 20.7-11.5 0-20.7-9.3-20.7-20.7 0-11.5 9.3-20.7 20.7-20.7 11.4-.1 20.7 9.2 20.7 20.7z" class="S"/><text transform="translate(573.404 90.134)" class="G U" fill="#231f20" font-size="29.144">8</text><text transform="translate(362.185 90.548)" class="G S U V">FIS-110</text><path d="M564.1 269.3h51.8v51.8h-51.8z" class="S"/><text transform="translate(580.473 307.226)" class="G U V" fill="#231f20">5</text><text><tspan class="G S V Y" x="441.535" y="179.638">Física</tspan><tspan x="413.435" y="222.638" class="G S V Y">General I</tspan></text><path d="M335.4 38.3h294.4v284.5H335.4z" fill="none" stroke="#fff" stroke-width="2" class="T"/><text><tspan class="G P Q R" x="688.396" y="76.29">Número</tspan><tspan y="110.59" class="G P Q R" x="688.396">asignatura</tspan></text><path d="M533.9 350.8l53.9-29.8m26.4-240.5h68.5" fill="none" class="T W"/><text><tspan class="G P Q R" x="688.396" y="187.767">Nombre</tspan><tspan y="222.067" class="G P Q R" x="688.396">asignatura</tspan></text><path d="M614.2 180.6h68.5" fill="none" class="T W"/><text><tspan class="G P Q R" x="136.82" y="76.29">Código </tspan><tspan x="75.92" y="110.59" class="G P Q R">asignatura</tspan></text><path d="M290 80.5h68.4" fill="none" class="T W"/><text transform="translate(27.42 306.825)" class="G P Q R">Pre Requisito</text><path d="M290 299.6h68.4" fill="none" class="T W"/><text transform="translate(347.988 398.609)" class="G P Q R">Créditos USM</text><circle cx="391.5" cy="291.1" r="22.3" stroke="#fff" stroke-width=".5" class="X"/><text transform="translate(382.607 301.45)" class="G S U" font-size="31.325">2</text><path d="M458.4 291.1c0 12.3-10 22.3-22.3 22.3s-22.3-10-22.3-22.3 10-22.3 22.3-22.3c12.3.1 22.3 10 22.3 22.3z" stroke="#fff" stroke-width=".5" class="T X"/><text transform="translate(427.185 301.45)" class="G S U" font-size="31.325">3</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 949.4 434.9">
+  <style>
+    <![CDATA[.G{letter-spacing:-1}.P{fill:#6d6e70}.Q{font-family:OpenSans-Italic}.R{font-size:45.668px}.S{fill:#fff}.T{stroke-miterlimit:10}.U{font-family:OpenSans-Bold}.V{font-size:35.87px}.W{stroke:#6d6e70}.X{fill:#00828e}.Y{font-family:OpenSans-Regular}]]>
+  </style>
+  <path d="M336.8 39.6h291.7v281.9H336.8z" class="X" />
+  <path d="M335.4 42.6h293.1v75.9H335.4zm1.4 222.7h293.1v56.2H336.8z" class="P" />
+  <path d="M603.1 80.6c0 11.4-9.3 20.7-20.7 20.7-11.5 0-20.7-9.3-20.7-20.7 0-11.5 9.3-20.7 20.7-20.7 11.4-.1 20.7 9.2 20.7 20.7z" class="S" />
+  <text transform="translate(573.404 90.134)" class="G U" fill="#231f20" font-size="29.144">8</text>
+  <text transform="translate(362.185 90.548)" class="G S U V">FIS-110</text>
+  <path d="M564.1 269.3h51.8v51.8h-51.8z" class="S" />
+  <text transform="translate(580.473 307.226)" class="G U V" fill="#231f20">5</text>
+  <text>
+    <tspan class="G S V Y" x="441.535" y="179.638">Física</tspan>
+    <tspan x="413.435" y="222.638" class="G S V Y">General I</tspan>
+  </text>
+  <path d="M335.4 38.3h294.4v284.5H335.4z" fill="none" stroke="#fff" stroke-width="2" class="T" />
+  <text>
+    <tspan class="G P Q R" x="688.396" y="76.29">Número</tspan>
+    <tspan y="110.59" class="G P Q R" x="688.396">asignatura</tspan>
+  </text>
+  <path d="M533.9 350.8l53.9-29.8m26.4-240.5h68.5" fill="none" class="T W" />
+  <text>
+    <tspan class="G P Q R" x="688.396" y="187.767">Nombre</tspan>
+    <tspan y="222.067" class="G P Q R" x="688.396">asignatura</tspan>
+  </text>
+  <path d="M614.2 180.6h68.5" fill="none" class="T W" />
+  <text>
+    <tspan class="G P Q R" x="136.82" y="76.29">Código </tspan>
+    <tspan x="75.92" y="110.59" class="G P Q R">asignatura</tspan>
+  </text>
+  <path d="M290 80.5h68.4" fill="none" class="T W" />
+  <text transform="translate(27.42 306.825)" class="G P Q R">Pre Requisito</text>
+  <path d="M290 299.6h68.4" fill="none" class="T W" />
+  <text transform="translate(347.988 398.609)" class="G P Q R">Créditos UDP</text>
+  <circle cx="391.5" cy="291.1" r="22.3" stroke="#fff" stroke-width=".5" class="X" />
+  <text transform="translate(382.607 301.45)" class="G S U" font-size="31.325">2</text>
+  <path d="M458.4 291.1c0 12.3-10 22.3-22.3 22.3s-22.3-10-22.3-22.3 10-22.3 22.3-22.3c12.3.1 22.3 10 22.3 22.3z" stroke="#fff" stroke-width=".5" class="T X" />
+  <text transform="translate(427.185 301.45)" class="G S U" font-size="31.325">3</text>
+</svg>

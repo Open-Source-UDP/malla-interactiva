@@ -1,83 +1,80 @@
 {
 	"s1": [
-		["Programación","IWI-131",3,5,"FI",[],"A"],
-		["Matemáticas I","MAT-021",5,8,"PC",[],"A"],
-		["Introducción a la Física","FIS-100",3,6,"PC",[],"A"],
-		["Humanístico I","HRW-132",2,3,"HUM",[],"A"],
-		["Educación Física I","DEW-100",1,2,"HUM",[],"A"]
+		["Algebra y Geometria", 			"CBM-1000", 7, "PC"],
+		["Calculo I", 						"CBM-1001", 7, "PC"],
+		["Química", 						"CBQ-1000", 6, "PC"],
+		["Programación", 					"CIT-1000", 6, "SD"],
+		["Comunicacion para la Ingenieria", "FIC-1000", 5, "TIN"]
 	],
 	"s2": [
-		["Química y Sociedad","QUI-010",3,5,"PC",[],"A"],
-		["Matemáticas II","MAT-022",5,7,"PC",["MAT-021"],"A"],
-		["Física General I","FIS-110",5,8,"PC",["MAT-021","FIS-100"],"A"],
-		["Introducción a la Ingeniería","IWG-101",2,3,"TIN",[],"A"],
-		["Humanístico II","HRW-133",2,3,"HUM",[],"A"],
-		["Educación Física II","DEW-101",1,2,"HUM",["DEW-100"],"A"]
+		["Algebra Lineal", 			"CBM-1002", 6, "PC",	["CBM-1000"]],
+		["Calculo II",				"CBM-1003", 6, "PC", 	["CBM-1001"]],
+		["Mecanica", 				"CBF-1000", 7, "PC", 	["CBM-1001"]],
+		["Programacion Avanzada", 	"CIT-1010", 6, "SD", 	["CIT-1000"]],
+		["CFG", 					"CFG-1", 	5, "TIN"]
 	],
 	"s3": [
-		["Estructuras de Datos","INF-134",3,5,"FI",["IWI-131"],"A"],
-		["Matemáticas III","MAT-023",4,7,"PC",["MAT-022"],"A"],
-		["Física General III","FIS-130",4,8,"PC",["MAT-022","FIS-110"],"A"],
-		["Estructuras Discretas","INF-152",3,5,"FI",["IWI-131","MAT-021"],"A"],
-		["Teoría de Sistemas","INF-260",3,5,"SD",["IWG-101"],"A"],
-		["Libre I","INF-1",1,2,"HUM",[],"A"]
+		["Ecuaciones Diferenciales", 			"CBM-1005", 6, "PC",	["CBM-1002","CBM-1003"]],
+		["Calculo III", 						"CBM-1006", 6, "PC", 	["CBM-1003"]],
+		["Calor y Ondas", 						"CBF-1001", 7, "PC", 	["CBM-1003","CBF-1000"]],
+		["Estructura de Datos y Algoritmos", 	"CIT-2006", 6, "FI",	["CIT-1010"]],
+		["Redes de Datos", 						"CIT-2114", 6, "TIC",	["CIT-1010"]]
 	],
 	"s4": [
-		["Lenguajes de Programación","INF-253",3,5,"FI",["INF-134"],"A"],
-		["Matemáticas IV","MAT-024",4,6,"PC",["MAT-023"],"A"],
-		["Física General II","FIS-120",4,8,"PC",["MAT-022","FIS-110"],"A"],
-		["Informática Teórica","INF-155",3,5,"FI",["INF-134","INF-152"],"A"],
-		["Economía IA","IWN-170",3,5,"IND",["MAT-023"],"A"],
-		["Libre II","INF-2",1,2,"HUM",[],"A"]
+		["Probabilidad y Estadística", 	"CIT-2204", 6, "SD",	["CBM-1003"]],
+		["Electronica y electrotecnia", "CIT-2107", 6, "PC",	["CBF-1000","CBM-1005","CBM-1006"]],
+		["Electricidad y Magnetismo", 	"CBF-1002", 7, "PC",	["CBM-1005","CBM-1006"]],
+		["Bases de Datos",				"CIT-2007", 6, "FI",	["CIT-2006"]],
+		["Desarollo web y movil", 		"CIT-2008", 6, "FI",	["CIT-1010"]],
+		["Ingles I",			 		"CIG-1012", 5, "TIN"]
 	],
 	"s5": [
-		["Bases de Datos","INF-239",3,5,"IS",["INF-134"],"A"],
-		["Arquitectura y Organización de Computadores","INF-245",3,5,"TIC",["INF-134"],"A"],
-		["Física General IV","FIS-140",4,8,"PC",["FIS-130","FIS-120"],"A"],
-		["Estadística Computacional","INF-280",3,5,"AN",["IWI-131","MAT-023"],"A"],
-		["Organizaciones y Sistemas de Información","INF-270",3,5,"SD",["INF-260"],"A"],
-		["Libre III","INF-3",1,2,"HUM",[],"A"]
+		["Optimización", 				"CII-2750", 6, "SD",	["CBM-1002","CBM-1006"]],
+		["Taller de Redes y Servicios", "CIT-2108", 6, "TIC",	["CIT-2114","CIT-2204"]],
+		["Proyectos en TICs I", 		"CIT-2205", 6, "AN",	["CIT-2114","CIT-2008"]],
+		["Bases de Datos Avanzadas", 	"CIT-2009", 6, "FI",	["CIT-2007"]],
+		["CFG", 						"CFG-2", 	5, "TIN"],
+		["Ingles II", 					"CIG-1013", 5, "TIN",	["CIG-1012"]],
+		["Practica Profesional I", 		"CIT-4000", 7, "ELEC",	["CIT-2204","CIT-2107","CBF-1002","CIT-2007","CIT-2008"]]
 	],
 	"s6": [
-		["Análisis y Diseño de Software","INF-236",3,5,"IS",["INF-239","INF-253"],"A"],
-		["Sistemas Operativos","INF-246",3,5,"TIC",["INF-245"],"A"],
-		["Ingeniería, Informática y Sociedad","INF-276",3,5,"TIN",["INF-270"],"A"],
-		["Algoritmos y Complejidad","INF-221",3,5,"FI",["INF-152","INF-253"],"A"],
-		["Optimización","INF-292",3,5,"SD",["MAT-023"],"A"],
-		["Libre IV","INF-4",1,2,"HUM",[],"A"]
+		["Contabilidad y Costos", 						"CII-1000", 6, "SD",	["CBM-1001"]],
+		["Arquitectura y Organizacion de Computadores", "CIT-2109", 6, "TIC",	["CIT-2114","CIT-2107"]],
+		["Señales y Sistemas", 							"CIT-2110", 6, "TIC",	["CBF-1001","CIT-2107"]],
+		["Sistemas Operativos", 						"CIT-2010", 6, "FI",	["CIT-2006","CIT-2108"]],
+		["CFG", 										"CFG-3", 	5, "TIN"],
+		["Ingles III", 									"CIG-1014", 5, "TIN",	["CIG-1013"]]
 	],
 	"s7": [
-		["Ingeniería de Software","INF-225",3,5,"IS",["INF-236"],"I"],
-		["Redes de Computadores","INF-256",3,5,"TIC",["INF-246"],"I"],
-		["Información y Matemáticas Financieras","ICN-270",3,5,"IND",["IWN-170"],"I"],
-		["Computación Científica","INF-285",3,5,"AN",["MAT-024","INF-221"],"I"],
-		["Investigación de Operaciones","INF-293",3,6,"SD",["INF-280","INF-292"],"I"],
-		["Libre V","INF-5",1,2,"HUM",[],"A"]
+		["Gestión Organizacional", 		"CIT-2206", 6, "SD",	["CIT-4000"]],
+		["Sistemas Distribuidos", 		"CIT-2011", 6, "FI",	["CIT-2114","CIT-2010"]],
+		["Comunicaciones Digitales", 	"CIT-2111", 6, "TIC",	["CBF-1002","CIT-2110"]],
+		["Ingenieria de Software", 		"CIT-2012", 6, "FI",	["CIT-2007","CIT-2205"]],
+		["CFG", 						"CFG-4", 	5, "TIN"]
 	],
 	"s8": [
-		["Diseño Interfaces Usuarias","INF-322",3,5,"IS",["INF-225"],"P"],
-		["Sistemas Distribuidos","INF-343",3,5,"TIC",["INF-256"],"P"],
-		["Electivo Informática I","INF-301",3,5,"ELEC",[],"P"],
-		["Inteligencia Artificial","INF-295",3,5,"AN",["INF-292","INF-221"],"P"],
-		["Sistemas de Gestión","INF-266",3,5,"SD",["INF-276"],"P"],
-		["Libre VI","INF-6",1,2,"HUM",[],"A"]
+		["Introduccion a la Economia", 			"CII-2100", 6, "SD",	["CBM-1003"]],
+		["Tecnologias Inalambricas", 			"CIT-2112", 6, "TIC",	["CIT-2111"]],
+		["Criptografia y Seguridad en Redes", 	"CIT-2113", 6, "TIC",	["CIT-2108"]],
+		["Inteligencia Artificial", 			"CIT-2013", 6, "FI",	["CIT-2204","CIT-2007","CII-2750"]],
+		["Evaluacion de Proyectos TIC", 		"CIT-2207", 6, "AN",	["CII-1000","CIT-2206","CIT-2012"]]
 	],
 	"s9": [
-		["Electivo Informática II","INF-302",3,5,"ELEC",[],"A"],
-		["Electivo Informática III","INF-303",3,5,"ELEC",[],"A"],
-		["Electivo I","INF-311",3,5,"ELEC",[],"A"],
-		["Electivo II","INF-312",3,5,"ELEC",[],"A"],
-		["Gestión de Proyectos de Informática","INF-360",3,5,"SD",["INF-322","INF-266"],"I"],
-		["Libre VII","INF-7",1,2,"HUM",[],"A"]
+		["Electivo Profesional", 		"CIT-33XX", 6, "FI"],
+		["Arquitecturas Emergentes", 	"CIT-3100", 6, "TIC",	["CIT-2011"]],
+		["Electivo Profesional", 		"CIT-34XX", 6, "TIC"],
+		["Arquitectura de Software", 	"CIT-3000", 6, "FI",	["CIT-2012"]],
+		["Data Science", 				"CIT-3202", 6, "AN",	["CIT-2009","CIT-2013"]],
+		["Practica profesional II",		"CIT-4001", 7, "ELEC",	["CII-2100","CIT-2112","CIT-2113","CIT-2013","CIT-2207"]]
 	],
 	"s10": [
-		["Electivo Informática IV","INF-304",3,5,"ELEC",[],"A"],
-		["Electivo III","INF-313",3,5,"ELEC",[],"A"],
-		["Electivo IV","INF-314",3,5,"ELEC",[],"A"],
-		["Taller Desarrollo de Proyecto de Informática","INF-228",6,10,"TIN",["INF-360"],"P"],
-		["Trabajo de Título 1","INF-309",1,2,"TIN",["INF-360"],"P"]
+		["Electivo Profesional", "CIT-33XY", 6, 	"FI"],
+		["Electivo Profesional", "CIT-34XY", 6, 	"TIC"],
+		["Electivo Profesional", "CIT-34XZ", 6, 	"TIC"],
+		["Electivo Profesional", "CIT-33XZ", 6, 	"FI"],
+		["Proyectos en TICs II", "CIT-3203", 6, 	"AN",	["CIT-2207"]]
 	],
 	"s11": [
-		["Trabajo de Título 2","INF-310",12,20,"TIN",["INF-228","INF-309"],"I"]
+		["Actividad de titulacion", "CIT-4002", 9, "ELEC",	["CIT-33XY","CIT-34XY","CIT-34XZ","CIT-33XZ","CIT-3203"]]
 	]
 }

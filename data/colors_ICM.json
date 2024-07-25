@@ -1,9 +1,0 @@
-{
-	"PC": ["#00838F", "Plan Común"],
-	"HUM": ["#B0B91D", "Humanistas, libres"],
-	"IND": ["#6BA8D1", "Industrias"],
-	"MEC": ["#00AD5D", "Departamento Mecanica"],
-	"DEF": ["#991B1E", "DEFIDER"],
-	"MIN": ["#F8F32B", "Departamento Minas"],
-	"QUI": ["#572364", "Departamento Química"]
-}

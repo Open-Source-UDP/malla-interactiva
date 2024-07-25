@@ -1,9 +1,0 @@
-{
-	"MAT": ["#021eab", "Matemáticas"],
-	"FIS": ["#a4f533", "Física"],
-	"HUM": ["#ff7c34", "Humanistas"],
-	"PC": ["#cf60f6", "Plan Común"],
-	"IN": ["#3ec540", "Inglés"],
-	"LIC": ["#0cf7a9", "Licenciatura"],
-	"DEW":  ["#991B1E", "DEFIDER"]
-}

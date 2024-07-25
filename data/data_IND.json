@@ -1,0 +1,89 @@
+{
+  "s1": [
+    ["Algebra y Geometria", "CBM-1000", 7, "PC"],
+    ["Calculo I", "CBM-1001", 7, "PC"],
+    ["Química", "CBQ-1000", 6, "PC"],
+    ["Programación", "CIT-1000", 6, "SD"],
+    ["Comunicacion para la Ingenieria", "FIC-1000", 5, "TIN"]
+  ],
+  "s2": [
+    ["Algebra Lineal", "CBM-1002", 6, "PC", ["CBM-1000"]],
+    ["Calculo II", "CBM-1003", 6, "PC", ["CBM-1001"]],
+    ["Mecanica", "CBF-1000", 7, "PC", ["CBM-1001"]],
+    ["Programacion Avanzada", "CIT-1010", 6, "SD", ["CIT-1000"]],
+    ["CFG", "CFG-1", 5, "TIN"]
+  ],
+  "s3": [
+    ["Ecuaciones Diferenciales", "CBM-1005", 6, "PC", ["CBM-1002", "CBM-1003"]],
+    ["Calculo III", "CBM-1006", 6, "PC", ["CBM-1003"]],
+    ["Calor y Ondas", "CBF-1001", 7, "PC", ["CBM-1003", "CBF-1000"]],
+    ["Contabilidad y Costos", "CII-1000", 6, "SD", ["CBM-1001"]],
+    ["CFG", "CFG-2", 5, "TIN"],
+    ["Ingles I", "CIG-1012", 5, "TIN"]
+  ],
+  "s4": [
+    ["Probabilidad y Estadistica", "CBE-2000", 6, "SD", ["CBM-1003"]],
+    ["Estática", "CII-2250", 6, "SD", ["CBF-1000"]],
+    [
+      "Electricidad y Magnetismo",
+      "CBF-1002",
+      7,
+      "PC",
+      ["CBM-1005", "CBM-1006"]
+    ],
+    ["Introducción a la Economía", "CII-2100", 6, "SD", ["CBM-1003"]],
+    ["CFG", "CFG-3", 5, "TIN"],
+    ["Ingles II", "CIG-1013", 5, "TIN", ["CIG-1012"]],
+    ["Practica Profesional I", "ICI-5011", 7, "ELEC"]
+  ],
+  "s5": [
+    ["Inferencia Estadística", "CII-2751", 6, "SD", ["CBE-2000"]],
+    ["Mecanica de Fluidos", "CII-2401", 6, "SD", ["CII-2250", "CBF-1002"]],
+    ["Optimizacion", "CII-2750", 6, "SD", ["CBM-1002", "CBM-1006"]],
+    ["Teoría Organizacional", "CII-1001", 6, "SD",["FIC-1000"]],
+    ["CFG", "CFG-4", 5, "TIN"],
+    ["Ingles III", "CIG-1014", 5, "TIN", ["CIG-1013"]]
+  ],
+  "s6": [
+    ["Bases de Datos", "CII-2501", 6, "AN", ["CIT-1010"]],
+    ["Termodinamica", "CII-2402", 6, "SD", ["CII-2401", "CBF-1001"]],
+    ["Modelos Estocásticos", "CII-2755", 6, "SD", ["CBE-2000", "CII-2750"]],
+    ["Microeconomia", "CII-2101", 6, "SD", ["CII-2100", "CII-2750"]],
+    ["Ingenieria Economica", "CII-2002", 6, "AN", ["CII-1000"]]
+  ],
+  "s7": [
+    ["Econometria", "CII-2656", 6, "AN", ["CII-2751", "CII-2101"]],
+    ["Proyectos Energeticos", "CII-2403", 6, "AN", ["CII-2402"]],
+    ["Produccion", "CII-2253", 6, "AN", ["CII-2750"]],
+    ["Marketing", "CII-2102", 6, "AN", ["CII-2100", "CII-1001"]],
+    ["Finanzas", "CII-2003", 6, "AN", ["CII-2002"]]
+  ],
+  "s8": [
+    ["Data Science", "CII-2504", 6, "AN", ["CII-2751", "CII-2750"]],
+    ["Simulacion", "CII-2757", 6, "AN", ["CII-2755"]],
+    ["Logistica", "CII-2254", 6, "AN", ["CII-2253"]],
+    ["Gestion Estrategica", "CII-2103", 6, "AN", ["CII-2102"]],
+    ["Evaluacion de Proyectos", "CII-2004", 6, "AN", ["CII-2003"]]
+  ],
+  "s9": [
+    ["Electivo Profesional", "CII-33XX", 6, "AN"],
+    ["Electivo Profesional", "CII-34XX", 6, "AN"],
+    ["Electivo Profesional", "CII-35XX", 6, "AN"],
+    ["Electivo Profesional", "CII-36XX", 6, "AN"],
+    [
+      "Liderazgo y Emprendimiento",
+      "CII-3101",
+      6,
+      "AN",
+      ["CII-2103", "CII-2004"]
+    ],
+    ["Practica Profesional II", "ICI-5022", 7, "ELEC", ["ICI-5011"]]
+  ],
+  "s10": [
+    ["Electivo Profesional", "CII-33XY", 6, "AN"],
+    ["Electivo Profesional", "CII-34XY", 6, "AN"],
+    ["Electivo Profesional", "CII-35XY", 6, "AN"],
+    ["Electivo Profesional", "CII-36XY", 6, "AN"],
+    ["Taller de Ing. Industrial", "CII-3102", 7, "AN", ["CII-2004"]]
+  ]
+}

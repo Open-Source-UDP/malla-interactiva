@@ -1,8 +1,0 @@
-{
-	"CB": ["#FFFF54", "Ciencias Básicas"],
-	"FG": ["#9FCBDA", "Formación General"],
-	"CDI": ["#F5C242", "Ciencias de la Ingeniería"],
-	"IA": ["#4FAD5B", "Ingeniería Aplicada"],
-	"GA": ["#AEA1C4", "Gestión y Administración"],
-	"EFP": ["#D09996", "Electivos de Formación Profesional"]
-}

@@ -3,10 +3,6 @@
 		"#7CEEEE",
 		"Ciencias Basicas"
 	],
-	"FI": [
-		"#BDBDBD",
-		"Informática"
-	],
 	"TIN": [
 		"#EEB17C",
 		"Transversal"
@@ -14,10 +10,6 @@
 	"SD": [
 		"#7CEEA8",
 		"Ciencias de la Ingenieria"
-	],
-	"TIC": [
-		"#C7A0D4",
-		"Telecomunicaciones"
 	],
 	"AN": [
 		"#FF6961",

@@ -1,9 +1,0 @@
-{
-	"MAT": ["#9DECFF", "Matemáticas"],
-	"FIS": ["#C19DFF", "Física"],
-	"HRW": ["#ff7c34", "Humanistas"],
-	"PC": ["#A9A9A9", "Plan Común"],
-	"HCW": ["#F2FF5F", "Inglés"],
-	"DEW":  ["#FF9D9D", "DEFIDER"],
-    "QUI": ["#6CBE65", "Química"]
-}

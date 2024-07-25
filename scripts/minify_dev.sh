@@ -14,3 +14,6 @@ echo ./js/min4.js
 
 # moves assets to root
 cp ./assets/* ./
+
+# Create file representing last update date
+date +"%s000" | tee date.txt

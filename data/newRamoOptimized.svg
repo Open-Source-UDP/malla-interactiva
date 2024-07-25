@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100"   font-family="  -apple-system,   BlinkMacSystemFont,   &quot;Segoe UI&quot;,   &quot;Roboto&quot;,   &quot;Helvetica Neue&quot;, Arial, sans-serif,   &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" font-family="  -apple-system,   BlinkMacSystemFont,   &quot;Segoe UI&quot;,   &quot;Roboto&quot;,   &quot;Helvetica Neue&quot;, Arial, sans-serif,   &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;">
    <style type="text/css">
    .bars {
       fill: grey;
@@ -20,4 +20,45 @@
          stroke: white;
       }
    }
-</style><style><![CDATA[.D{dominant-baseline:middle}.E{font-size:12px}.F{text-anchor:middle}]]></style><path fill="#2e58a7" d="M100 0h100v100H100z"/><path d="M100 0h100v20H100zm0 80h100v20H100z" class="bars" fill="gray"/><circle cx="190" cy="10" r="8" fill="#fff" fill-rule="evenodd"/><circle cy="90" cx="115" r="9" fill="#00838f" stroke="#fff"/><path d="M178 80h20v20h-20z" fill="#fff"/><text xml:space="preserve" x="190" y="10" writing-mode="lr-tb" direction="ltr" class="D E F"><tspan x="190" y="10" class="D">1</tspan></text><text xml:space="preserve" x="188" y="90" class="D E F"><tspan x="187.639" y="90" class="D">1</tspan></text><text xml:space="preserve" x="115" y="90" fill="#fff" class="D E F"><tspan x="114.979" y="90.391" class="D">0</tspan></text><text xml:space="preserve" x="105" y="10" font-weight="bold" letter-spacing="0" fill="#fff" class="D E"><tspan x="105" y="10" class="D">INF-101</tspan></text><text xml:space="preserve" x="150" y="40" fill="#fff" class="E F"><tspan x="150" y="40" class="D">Introducción</tspan><tspan x="150" y="53.2" class="D">a la Malla</tspan><tspan x="150" y="66.4" class="D">Interactiva</tspan></text><text xml:space="preserve" x="92.465" y="11.742" text-anchor="end" class="E text"><tspan x="92.465" y="11.742">Sigla</tspan><tspan x="92.465" y="26.742">Asignatura</tspan></text><text xml:space="preserve" x="209.197" y="16.86" class="E text"><tspan x="209.197" y="16.86">Número</tspan><tspan x="209.197" y="31.86">asignatura</tspan></text><text xml:space="preserve" x="209.326" y="89.117" class="E text"><tspan id="subjectExample" x="209.326" y="89.117">Créditos USM</tspan></text><text xml:space="preserve" x="47.622" y="93.323" class="E F text"><tspan x="47.622" y="93.323">Prerrequisitos</tspan></text><path d="M94 9.4h9m91 2.6h14m-17 75h17m-100 3H92" class="line" stroke="#000"/></svg>
+</style>
+   <style>
+      <![CDATA[.D{dominant-baseline:middle}.E{font-size:12px}.F{text-anchor:middle}]]>
+   </style>
+   <path fill="#2e58a7" d="M100 0h100v100H100z" />
+   <path d="M100 0h100v20H100zm0 80h100v20H100z" class="bars" fill="gray" />
+   <circle cx="190" cy="10" r="8" fill="#fff" fill-rule="evenodd" />
+   <circle cy="90" cx="115" r="9" fill="#00838f" stroke="#fff" />
+   <path d="M178 80h20v20h-20z" fill="#fff" />
+   <text xml:space="preserve" x="190" y="10" writing-mode="lr-tb" direction="ltr" class="D E F">
+      <tspan x="190" y="10" class="D">1</tspan>
+   </text>
+   <text xml:space="preserve" x="188" y="90" class="D E F">
+      <tspan x="187.639" y="90" class="D">1</tspan>
+   </text>
+   <text xml:space="preserve" x="115" y="90" fill="#fff" class="D E F">
+      <tspan x="114.979" y="90.391" class="D">0</tspan>
+   </text>
+   <text xml:space="preserve" x="105" y="10" font-weight="bold" letter-spacing="0" fill="#fff" class="D E">
+      <tspan x="105" y="10" class="D">INF-101</tspan>
+   </text>
+   <text xml:space="preserve" x="150" y="40" fill="#fff" class="E F">
+      <tspan x="150" y="40" class="D">Introducción</tspan>
+      <tspan x="150" y="53.2" class="D">a la Malla</tspan>
+      <tspan x="150" y="66.4" class="D">Interactiva</tspan>
+   </text>
+   <text xml:space="preserve" x="92.465" y="11.742" text-anchor="end" class="E text">
+      <tspan x="92.465" y="11.742">Sigla</tspan>
+      <tspan x="92.465" y="26.742">Asignatura</tspan>
+   </text>
+   <text xml:space="preserve" x="209.197" y="16.86" class="E text">
+      <tspan x="209.197" y="16.86">Número</tspan>
+      <tspan x="209.197" y="31.86">asignatura</tspan>
+   </text>
+   <text xml:space="preserve" x="209.326" y="89.117" class="E text">
+      <tspan id="subjectExample" x="209.326" y="89.117">Créditos UDP</tspan>
+   </text>
+   <text xml:space="preserve" x="47.622" y="93.323" class="E F text">
+      <tspan x="47.622" y="93.323">Prerrequisitos</tspan>
+   </text>
+   <path d="M94 9.4h9m91 2.6h14m-17 75h17m-100 3H92" class="line" stroke="#000" />
+</svg>
