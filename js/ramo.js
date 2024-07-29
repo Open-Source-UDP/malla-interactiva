@@ -325,6 +325,10 @@ class Ramo {
 
     // se llama cuando el mouse entra al ramo
     isBeingHovered() {
+
+        // if the device is a phone, return
+        if (window.outerWidth < 800) return;
+
         for (let relation of this.relations) {
             if (relation.start.id != this.sigla) {
                 const film = relation.start.querySelector(".non-approved");
