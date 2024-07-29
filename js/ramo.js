@@ -43,6 +43,23 @@ class Ramo {
         this.ramo = null;
         this.approved = false;
         //console.log(this.category)
+
+        // Guarda las flechas que marcan las relaciones entre ramos
+        this.relations = new Set();
+    }
+
+    // Ramos que dependen de este ramo
+    getDependents() {
+        if (!this.dependents) {
+            this.dependents = new Set();
+            for (let ramo of Object.values(this.malla.ALLSUBJECTS)) {
+                if (ramo.prer.has(this.sigla)) {
+                    this.dependents.add(ramo.sigla);
+                }
+            }
+        }
+
+        return this.dependents;
     }
 
     // Auto explanatorio
@@ -243,7 +260,31 @@ class Ramo {
             c_x += r * 2;
         });
         this.createActionListeners();
+        setTimeout(() => {
+            this.createRelations();
+        },100)
         this.wrap(sizeX - 5, sizeY / 5 * 3);
+    }
+
+    createRelations() {
+        for (let sigla of this.prer) {
+            const start = document.getElementById(sigla);
+            const end = document.getElementById(this.sigla);
+            if (!start || !end)
+                continue;
+            this.relations.add(
+              new LeaderLine(start, end, {hide: true, path: 'straight', endSocket: 'left'})
+            );
+        }
+        for (let sigla of this.getDependents()) {
+            const start = document.getElementById(this.sigla);
+            const end = document.getElementById(sigla);
+            if (!start || !end)
+                continue;
+            this.relations.add(
+                new LeaderLine(start, end, {hide: true, path: 'straight', endSocket: 'left', color: 'blue'})
+                );
+        }
     }
 
     // renderiza las animaciones de interacción
@@ -270,6 +311,8 @@ class Ramo {
     // Crea las reacciones a las interacciones del usuario
     createActionListeners() {
         this.ramo.on("click", () => this.isBeingClicked());
+        this.ramo.on("mouseenter", () => this.isBeingHovered());
+        this.ramo.on("mouseleave", () => this.isNotBeingHovered());
     }
 
     // se llama cuando se pulsa del ramo
@@ -278,6 +321,49 @@ class Ramo {
         this.malla.verifyPrer();
         this.malla.updateStats();
         this.malla.saveApproved();
+    }
+
+    // se llama cuando el mouse entra al ramo
+    isBeingHovered() {
+        for (let relation of this.relations) {
+            if (relation.start.id != this.sigla) {
+                const film = relation.start.querySelector(".non-approved");
+                if (film.getAttribute("opacity") != "0") {
+                    film.style.fill = "coral";
+                    film.style.opacity = "0.3";
+                }
+            }
+            if (relation.end.id != this.sigla) {
+                const film = relation.end.querySelector(".non-approved");
+                if (film.getAttribute("opacity") != "0") {
+                    film.style.fill = "CornflowerBlue";
+                    film.style.opacity = "0.3";
+                }
+            }
+            relation.show();
+        }
+    }
+
+    // se llama cuando el mouse sale del ramo
+    isNotBeingHovered() {
+        for (let relation of this.relations) {
+            if (relation.start != this.ramo) {
+                const film = relation.start.querySelector(".non-approved");
+                film.style.fill = null;
+                film.style.opacity =
+                    null;
+
+            }
+            if (relation.end != this.ramo) {
+                const film = relation.end.querySelector(
+                    ".non-approved"
+                );
+                film.style.fill = null;
+                film.style.opacity = null;
+            }
+            relation.hide();
+
+        }
     }
 
     // Auto explanatorio
