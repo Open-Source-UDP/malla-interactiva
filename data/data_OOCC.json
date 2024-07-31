@@ -1,0 +1,81 @@
+{
+	"s1": [
+		["Algebra y Geometría", 			"CBM-1000", 7, "CB"],
+		["Cálculo I", 						"CBM-1001", 7, "CB"],
+		["Química", 						"CBQ-1000", 6, "CB"],
+		["Programación", 					"CIT-1000", 6, "CI"],
+		["Comunicación para la Ingeniería", "FIC-1000", 5, "INT"]
+	],
+	"s2": [
+		["Algebra Lineal", 			"CBM-1002", 6, "CB",	["CBM-1000"]],
+		["Cálculo II",				"CBM-1003", 6, "CB", 	["CBM-1001"]],
+		["Mecánica", 				"CBF-1000", 7, "CB", 	["CBM-1001"]],
+		["Ingeniería de Materiales", 	"COC-2001", 6, "CI", 	["CBQ-1000"]],
+		["Minor/CFG 1", 					"CFG-1", 	5, "INT"]
+	],
+	"s3": [
+		["Ecuaciones Diferenciales", 			"CBM-1005", 6, "CB",	["CBM-1002","CBM-1003"]],
+		["Calculo III", 						"CBM-1006", 6, "CB", 	["CBM-1003"]],
+		["Calor y Ondas", 						"CBF-1001", 7, "CB", 	["CBM-1003","CBF-1000"]],
+		["Estática", 	"COC-2100", 6, "CI",	["CBM-1003", "CBF-1000"]],
+		["Minor/CFG 2", 					"CFG-2", 	5, "INT"],
+    ["Inglés I",			 		"FIC-1001", 5, "INT"]
+	],
+	"s4": [
+		["Probabilidad y Estadística", 	"CBE-2000", 6, "CI",	["CBM-1003"]],
+		["Mecánica de Fluidos", "COC-2200", 6, "CI",	["COC-2100"]],
+		["Electricidad y Magnetismo", 	"CBF-1002", 7, "CB",	["CBM-1005","CBM-1006"]],
+		["Mecánica de Sólidos",				"COC-2101", 6, "CI",	["COC-2100"]],
+		["Edificación", 		"COC-2002", 6, "AP",	["COC-2001"]],
+    ["Ingles II", 					"FIC-1002", 5, "INT",	["FIC-1001"]]
+	],
+	"s5": [
+		["Optimización", 				"CII-2750", 6, "CI",	["CBM-1002","CBM-1006"]],
+		["Hidráulica", "COC-2201", 6, "AP",	["COC-2200"]],
+		["Topografía", 		"COC-20012", 6, "AP",	["COC-2002"]],
+		["Análisis Estructural", 	"COC-2102", 6, "CI",	["COC-2101"]],
+		["Minor/CFG 3", 						"CFG-3", 	5, "INT"],
+		["Inglés III", 		"FIC-1003", 5, "INT",	["FIC-1002"]]
+	],
+	"s6": [
+		["Introducción a la Economía", 						"CII-2000", 6, "CI",	["CBM-1006"]],
+		["Ingeniería Ambiental", "COC-2203", 6, "AP",	["CBQ-1000"]],
+		["Tecnología del Hormigón", 							"COC-2003", 6, "AP",	["CBE-2000","COC-2002"]],
+		["Diseño Estructural", 						"COC-2103", 6, "CI",	["COC-2102"]],
+		["Seminario Cs. Ingeniería", 										"COC-2300", 	6, "CI"],
+    ["Práctica I", "P-1", 		7, "INT",	["COC-2201", "COC-2102", "COC-2003"]]
+	],
+	"s7": [
+		["Mecánica de Suelos", 		"COC-2104", 6, "AP",	["COC-2200", "COC-2102"]],
+		["Hidrología", 		"COC-2204", 6, "AP",	["CBE-2000","COC-2201"]],
+		["Administración de Proyectos Civiles", 	"COC-2004", 6, "AP",	["COC-2002","CII-2000"]],
+		["Diseño en Hormigón", 		"COC-2105", 6, "AP",	["COC-2103"]],
+		["Minor/CFG 4", 						"CFG-4", 	5, "INT"]
+
+	],
+	"s8": [
+		["Fundaciones", 			"COC-2106", 6, "AP",	["COC-2104"]],
+		["Hidráulica Urbana", 			"COC-2205", 6, "AP",	["COC-2204"]],
+		["Planificación de Proyectos", 	"COC-2005", 6, "AP",	["COC-2004"]],
+		["Diseño en Acero", 			"COC-2107", 6, "AP",	["COC-2103"]],
+		["Ingeniería Sísmica", 		"COC-3100", 6, "AP",	["COC-2105"]],
+    ["Práctica II", "P-2", 		7, "INT",	["COC-2106", "COC-2205", "COC-2005", "COC-2107", "COC-3100"]]
+	],
+	"s9": [
+		["BIM", 		"FIC-10032", 6, "AP", ["COC-2105", "COC-2205"]],
+		["Ingeniería de Costos", 	"COC-3000", 6, "AP",	["COC-2005"]],
+		["Electivo Profesional", 		"COC-34XX", 6, "AP"],
+		["Electivo Profesional", 		"COC-35XX", 6, "AP"],
+		["Electivo Profesional", 		"COC-36XX", 6, "AP"]
+	],
+	"s10": [
+		["Taller de Proyectos", "COC-33XX", 7, 	"AP"],
+		["Diseño de Caminos", "COC-3001", 6, 	"AP", ["COC-2104", "COC-2105"]],
+		["Electivo Profesional", "COC-34XY", 6, 	"AP"],
+		["Electivo Profesional", "COC-35XY", 6, 	"AP"],
+		["Electivo Profesional", "COC-36XY", 6, 	"AP"]
+	],
+	"s11": [
+		["Actividad de titulacion", "COC-END", 30, "INT"]
+	]
+}
