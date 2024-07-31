@@ -62,8 +62,7 @@ class Malla {
             let data = JSON.parse(unparsedData)
             this.currentMalla = data.name;
             this.fullCareerName = data.name
-            console.log("hola")
-            console.log(data.name)
+            // console.log(data.name)
             return Promise.resolve(this.setMallaAndCategories(data.malla, data.categories))
 
         } else {
@@ -212,12 +211,32 @@ class Malla {
                     let bar = d3.select(d3.event.currentTarget)
                     let number = parseInt(bar.select("text").text().substr(4));
                     let ramosToSelect;
-                if (bar.node().getBBox().width <= this.subjectType.getDisplayWidth(this.scaleX) * 2 - this.subjectType.getDisplayWidth(this.scaleX) / 2) {
-                    d3.select("#sem" + (number * 2 + 1)).dispatch('click')
-                } else {
-                    d3.select("#sem" + number * 2).dispatch('click');
-                    d3.select("#sem" + (number * 2 - 1)).dispatch('click')
+                    const areAllRamosApproved = (semNumber) => {
+                        semester = "s" + semNumber
+                        const ramos = Object.values(this.malla[semester]);
+                        return ramos.every(ramo => ramo.approved)
+                    }
+                    let sem1 = number * 2 + 1
+                    let sem2 = number * 2
+                    let sem3 = number * 2 - 1
 
+                    const sem1Approved = areAllRamosApproved(sem1)
+                    const sem2Approved = areAllRamosApproved(sem2)
+                    const sem3Approved = areAllRamosApproved(sem3)
+
+                if (bar.node().getBBox().width <= this.subjectType.getDisplayWidth(this.scaleX) * 2 - this.subjectType.getDisplayWidth(this.scaleX) / 2) {
+                    if (sem1Approved){
+                        d3.select("#sem" + sem1).dispatch('click')
+                    }
+                } else {
+                    if ((sem2Approved && sem3Approved) || (!sem2Approved && !sem3Approved)) {
+                        d3.select("#sem" + sem2).dispatch('click')
+                        d3.select("#sem" + sem3).dispatch('click')
+                    } else if (!sem2Approved) {
+                        d3.select("#sem" + sem2).dispatch('click')
+                    } else if (!sem3Approved) {
+                        d3.select("#sem" + sem3).dispatch('click')
+                    }
                 }
 
                 });
@@ -648,7 +667,7 @@ class Malla {
                 document.getElementById("carrColor2").textContent = input.target.value.toUpperCase()
                 document.getElementById('dMalla').setAttribute('download', "data_" + input.target.value.toUpperCase() + '.json')
                 document.getElementById('dColor').setAttribute("download", "colors_" + input.target.value.toUpperCase() + '.json')
-                console.log(this.generatedCode[0])
+                // console.log(this.generatedCode[0])
                 this.generatedCode[0] = input.target.value
 
                 $('[data-toggle="tooltip"]').tooltip()
