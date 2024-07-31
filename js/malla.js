@@ -283,16 +283,27 @@ class Malla {
                 .text(this.romanize(intToRomanize))
                 .attr("dominant-baseline", "central")
                 .attr('text-anchor', 'middle');
+
             // evento en caso de clickear la barra del semestre
             semesterIndicator.on("click", () => {
                 let bar = d3.select(d3.event.currentTarget)
                 let semNumber = this.deRomanize(bar.select("text").text());
+                
                 if (semester[0] === "s")
                     semNumber = "s" + semNumber
-                Object.values(this.malla[semNumber]).forEach(ramo => {
-                    ramo.isBeingClicked()
-                })
 
+                const ramos = Object.values(this.malla[semNumber])
+                const allApproved = Object.values(ramos).every(ramo => ramo.approved)
+                const noneApproved = Object.values(ramos).every(ramo => !ramo.approved)
+
+                if (allApproved || noneApproved) {
+                    ramos.forEach(ramo => ramo.isBeingClicked())
+                } else {
+                    ramos.forEach(ramo => {
+                        if(!ramo.approved) ramo.isBeingClicked()
+                    })
+                    
+                }
             });
 
             globalY += semesterIndicatorHeight + separator;
