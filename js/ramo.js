@@ -270,20 +270,36 @@ class Ramo {
         for (let sigla of this.prer) {
             const start = document.getElementById(sigla);
             const end = document.getElementById(this.sigla);
+
+            const startAnchor = LeaderLine.pointAnchor(start, {x: 115, y: 75});
+            const endAnchor = LeaderLine.pointAnchor(end, {x: 25, y: 75});
+
             if (!start || !end)
                 continue;
-            this.relations.add(
-              new LeaderLine(start, end, {hide: true, path: 'straight', endSocket: 'left'})
+
+            this.relations.add({
+                start: start,
+                end: end,
+                line: new LeaderLine(startAnchor, endAnchor, {hide: true, path: 'straight', endSocket: 'left'})
+            }
             );
         }
         for (let sigla of this.getDependents()) {
             const start = document.getElementById(this.sigla);
             const end = document.getElementById(sigla);
+
+            const startAnchor = LeaderLine.pointAnchor(start, {x: 115, y: 75});
+            const endAnchor = LeaderLine.pointAnchor(end, {x: 25, y: 75});
+
             if (!start || !end)
                 continue;
-            this.relations.add(
-                new LeaderLine(start, end, {hide: true, path: 'straight', endSocket: 'left', color: 'blue'})
-                );
+
+            this.relations.add({
+                start: start,
+                end: end,
+                line: new LeaderLine(startAnchor, endAnchor, {hide: true, path: 'straight', endSocket: 'left', color: 'blue', dash: {animation: true}})
+            }
+        );
         }
     }
 
@@ -344,7 +360,7 @@ class Ramo {
                     film.style.opacity = "0.3";
                 }
             }
-            relation.show();
+            relation.line.show();
         }
     }
 
@@ -365,7 +381,7 @@ class Ramo {
                 film.style.fill = null;
                 film.style.opacity = null;
             }
-            relation.hide();
+            relation.line.hide();
 
         }
     }
