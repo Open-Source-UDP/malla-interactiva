@@ -200,6 +200,6 @@ Se agradece especialmente a:
 * [Carlos Ponce](https://github.com/capgadsx) por su ayuda en la integración del proyecto con Labcomp.
 
 Al mismo tiempo se agradece a todos quienes hayan realizado un aporte al proyecto
-<a href="https://github.com/csarman/malla-interactiva/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=csarman/malla-interactiva" />
+<a href="https://github.com/Open-Source-UDP/malla-interactiva/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Open-Source-UDP/malla-interactiva" />
 </a>
