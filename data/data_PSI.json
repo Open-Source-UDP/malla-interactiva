@@ -1,0 +1,86 @@
+{
+	"s1": [
+		["Historia de la psicología", 			"PSI-4121", 6, "FI"],
+		["Fundamentos biológicos del comportamiento", "PSI-4122", 6, "FI"],
+		["Psicología general", "PSI-4120", 6, "SD"],
+		["Transformaciones socioculturales", 					"PSI-4114", 4, "FI"],
+		["Filosofía y epistemología de la psicología", "PSI-4117", 5, "ELEC"],
+		["Inglés I", "CIG-1012", 5, "TIN"]
+
+	],
+	"s2": [
+		["Análisis crítico de la psicología en Chile", 			"PSI-4126", 4, "FI"],
+		["Neurociencias y psicología",				"PSI-4127", 4, "FI", 	["PSI-4122"]],
+		["Procesos psicológicos", 				"PSI-4123", 4, "SD", 	["PSI-4120"]],
+		["Psicología social I", 	"PSI-4214", 4, "SD"],
+		["Estadística", "PSI-4125", 	6, "ELEC"],
+		["Inglés II", "CIG-1013", 5, "TIN", ["CIG-1012"]]
+
+	],
+	"s3": [
+		["Psicología de la infancia", 			"PSI-4211", 4, "SD"],
+		["Psicologia de la adolescencia y juventud",				"PSI-4212", 4, "SD"],
+		["Psicología de la comunicación", 				"PSI-4128", 4, "SD"],
+		["Psicología social II", 	"PSI-4224", 4, "SD", ["PSI-4214"]],
+		["Investigación I", "PSI-41210", 	6, "ELEC"],
+		["Inglés III", "CIG-1014", 5, "TIN", ["CIG-1013"]]
+
+	],
+	"s4": [
+		["Introducción a la psicopatología", 			"PSI-4221", 6, "SD"],
+		["Introducción a la psicología clínica",				"PSI-4222", 6, "PC"],
+		["Psicología de la personalidad", 				"PSI-4223", 7, "SD"],
+		["Psicología de la adultez y la tercera edad", 	"PSI-4216", 6, "SD"],
+		["Investigación II", "PSI-4225", 	6, "ELEC", ["PSI-41210"]],
+		["Curso de formación general", "CFG-1", 	5, "TIN"]
+	],
+	"s5": [
+		["Psicopatología y psiquiatría de niños y adolescentes", "PSI-4311", 6, "PC", ["PSI-4221"]],
+		["Optativo de perspectivas en psicología clínica I",	"PSI-42220", 8, "PC", ["PSI-4222"]],
+		["Introducción al psicodiagnóstico", 				"PSI-4313", 7, "SD", ["PSI-4223"]],
+		["Psicología y salud", 	"PSI-4411", 6, "AN"],
+		["Investigación III", "PSI-4226", 	5, "ELEC", ["PSI-4225"]],
+		["Curso de formación general", "CFG-2", 	5, "TIN"]
+	],
+	"s6": [
+		["Psicología y psiquiatría de adultos", "PSI-4321", 6, "PC", ["PSI-4221"]],
+		["Optativo de perspectivas en psicología clínica II", "PSI-42221", 8, "PC", ["PSI-4222"]],
+		["Psicodiagnóstico de niños y adolescentes", "PSI-4323", 6, "PC", ["PSI-4313"]],
+		["Psicología y educación", 	"PSI-4324", 6, "AN"],
+		["Investigación IV", "PSI-4325", 	6, "ELEC", ["PSI-4226"]]
+
+	],
+	"s7": [
+		["Psicología y justicia", "PSI-4412", 6, "AN"],
+		["Psicología del trabajo y las organizaciones", "PSI-4314", 6, "AN"],
+		["Psicodiagnóstico de adultos", "PSI-4413", 6, "PC", ["PSI-4313"]],
+		["Psicología y sujetos sociales", 	"PSI-4414", 6, "AN"],
+		["Curso de formación general", "CFG-3", 	5, "TIN"]
+
+	],
+	"s8": [
+		["Gestión de recursos humanos", "PSI-4425", 5, "AN", ["PSI-4314"]],
+		["Optativo de intervención psicosocial", "PSI-443", 8, "AN", ["PSI-42221"]],
+		["Optativo de intervención clínica", "PSI-4430", 8, "PC", ["PSI-42221"]],
+		["Diseño y evaluación de proyectos de intervención", 	"PSI-44301", 6, "AN"],
+		["Curso de formación general", "CFG-4", 	5, "TIN"]
+
+	],
+	"s9": [
+		["Taller de intervención clínica", "PSI-4425", 8, "PC", ["PSI-4430"]],
+		["Taller de intervención psicosocial", "PSI-44302", 8, "AN", ["PSI-443"]],
+		["Curso de profundización", "PSI-5", 5, "AN"],
+		["Estrategias de trabajo grupal", 	"PSI-44290", 8, "AN"]
+		
+
+	],
+	"s10": [
+		["Práctica profesional", "PSI-4521", 22, "AN"],
+		["Supervisión de práctica", "PSI-4522", 6, "AN"],
+		["Curso de profundización", "PSI-52", 5, "AN"]
+		
+
+	]
+
+
+}
