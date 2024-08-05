@@ -1,0 +1,19 @@
+{
+	"CB": [
+		"#98CEFF",
+		"Ciencias Basicas"
+	],
+	"CI": [
+		"#D4FBCA",
+		"Ciencias de la ingeniería"
+	],
+	"INT": [
+		"#FDCA97",
+		"Interdisciplinaria"
+	],
+	"AP": [
+		"#FFFA94",
+		"Ingeniería Aplicada"
+	]
+
+}
